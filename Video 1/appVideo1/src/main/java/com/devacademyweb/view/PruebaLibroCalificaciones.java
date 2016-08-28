@@ -16,18 +16,21 @@ public class PruebaLibroCalificaciones {
 		
 		//Crea un objeto LibroCalificaciones.
 		LibroCalificaciones miLibroCalificaciones1=new LibroCalificaciones();
+		LibroCalificaciones miLibroCalificaciones2=null;//new LibroCalificaciones("Estructura de Datos");
 		
 		System.out.printf("El nombre inicial del curso es:%s\n\n", miLibroCalificaciones1.getNombreDelCurso());
+		//System.out.printf("El nombre inicial del curso es:%s\n\n", miLibroCalificaciones2.getNombreDelCurso());
 				
 		
 		//pide y recibe el nombre del curso como entrada.
 		System.out.println("Escriba el nombre del curso:");
 		nombreDelCurso=entrada.nextLine();//lee una linea de texto
-		miLibroCalificaciones1.setNombreDelCurso(nombreDelCurso);
+		//miLibroCalificaciones1.setNombreDelCurso(nombreDelCurso);
+		miLibroCalificaciones2=new LibroCalificaciones(nombreDelCurso);
 		System.out.println();
 		
 		//llama al metodo mostrarMensaje de miLibroCalificaciones
-		miLibroCalificaciones1.mostrarMensaje();
+		miLibroCalificaciones2.mostrarMensaje();
 		
 		
 	}
